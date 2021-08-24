@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(guideline.css);
+/* header menu font (font-family: 'Montserrat', sans-serif;) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+
+/* header 영역 ----------------------------------------------------- */
+div#headerFrame {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(238, 238, 238);
+}
+
+#headerFrame header#header {
+  width: 1240px;
+  height: 35px;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+#header nav a {
+  color: #555;
+  line-height: 35px;
+  padding: 0px 7px;
+  font-family: "Montserrat", sans-serif;
+}
+/* header 영역 ----------------------------------------------------- */
+div#wrap {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+#wrap div#logoBox {
+  height: 180px;
+  background-image: url(../images/logoTop.jpg);
+  background-position: 50% 50%;
+}
+
+#wrap nav#mainGnb ul.mainMenu {
+  justify-content: center;
+}
+
+#mainGnb ul.mainMenu a {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 13px;
+}
+
+#mainGnb ul.mainMenu a:hover {
+  color: #666;
+}
+
+#wrap div#pageTitle p:first-child {
+  text-align: right;
+  font-size: 12px;
+}
+
+#pageTitle p:last-child {
+  text-align: center;
+}
+
+#pageTitle p {
+  padding: 10px 0;
+}
+
+/* main영역 ----------------------------------------------- */
+
+/* main 공통영역 */
+.inputArea {
+  border-top: 1px solid #ddd;
+  padding: 0px 0;
+}
+
+.inputArea input,
+.inputArea select {
+  width: 150px;
+  height: 24px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.last {
+  border-bottom: 1px solid #ddd;
+}
+
+.inputTitle {
+  width: 160px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+#main p#basicInfo,
+#main p#extraInfo,
+#main p#agreement {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  width: 14px;
+  position: relative;
+}
+.inputArea label {
+  position: relative;
+  top: -7px;
+  font-size: 12px;
+}
+
+.inputArea span {
+  font-size: 12px;
+}
+
+/* input 영역별 개별 설정 */
+/* 비밀번호 확인 질문 */
+div#passChkQuestion select {
+  color: #555;
+  width: 280px;
+  font-size: 12px;
+}
+/* 비밀번호 확인 답변 */
+div#passChkAnswer input {
+  width: 510px;
+}
+
+/* 주소 영역 */
+div#address input#postNum {
+  width: 65px;
+}
+
+#address button {
+  height: 24px;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  left: -6px;
+}
+
+div#address input#addr1 {
+  width: 300px;
+  margin: 5px 0 4px 0;
+}
+
+#address input#addr2 {
+  width: 300px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#address label {
+  top: -1px;
+}
+
+/* 전화번호 영역 */
+div#contact1 input,
+div#contact2 input {
+  width: 60px;
+}
+
+#contact1 select,
+#contact2 select {
+  color: #555;
+  width: 60px;
+}
+
+/* 사용자 생년월일 */
+div#birthdate input#year {
+  width: 75px;
+}
+
+#birthdate input#month,
+#birthdate input#day {
+  width: 40px;
+}
+
+#birthdate input[type="radio"] {
+  margin: 0;
+  top: 10px;
+}
+#birthdate label {
+  top: 2px;
+}
+#birthdate input#solar {
+  margin-left: 10px;
+}

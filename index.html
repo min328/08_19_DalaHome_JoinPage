@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DalaHome JoinP Page (clone coding)</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div id="headerFrame">
+        <header id="header" class="flexbox">
+            <nav id="headerLnb1">
+                <ul id="lnb1" class="flexbox">
+                    <li><a href="#">+ BOOKMARK</a></li>
+                    <li><a href="#">+ SHORTCUT</a></li>
+                </ul>
+            </nav> <!-- nav#headerLnb1 -->
+            <nav id="headerLnb2">
+                <ul id="lnb2" class="flexbox">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN US</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">CART</a></li>
+                </ul>
+            </nav> <!-- nav#headerLnb2 -->
+        </header> <!-- header#header -->
+    </div> <!-- div#headerFrame -->
+
+    <div id="wrap">
+        <a href="#">
+            <div id="logoBox"></div>
+        </a> <!-- logo -->
+        <nav id="mainGnb">
+            <ul class="mainMenu flexbox">
+                <li class="mainLi"><a href="#">모지 MOZEE</a></li>
+                <li class="mainLi"><a href="#">마젤베딩</a></li>
+                <li class="mainLi"><a href="#">메이썸런드리겔</a></li>
+                <li class="mainLi"><a href="#">전체상품</a></li>
+            </ul>
+        </nav> <!-- nav#mainGnb -->
+        <div id="pageTitle">
+            <p>
+                <span><a href="#">홈</a></span>
+                ＞ 회원가입
+            </p>
+            <p>JOIN US</p>            
+        </div> <!-- div#pageTitle -->
+        <main id="main">
+            <div class="flexbox inputArea last">
+                <div class="inputTitle">회원구분</div>
+                <div><input type="radio" checked><label for="">개인회원</label></div>
+            </div>
+            <p id="basicInfo">기본정보</p>
+            <div class="flexbox inputArea">
+                <div class="inputTitle">아이디</div>
+                <div>
+                    <input type="text"> <span>(영소문자/숫자, 4~16자)</span>
+                </div>
+            </div>
+            <div class="flexbox inputArea">
+                <div class="inputTitle">비밀번호</div>
+                <div><input type="password"> <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</span></div>
+            </div>
+            <div class="flexbox inputArea">
+                <div class="inputTitle">비밀번호 확인</div>
+                <div><input type="password"></div>
+            </div>
+            <div class="flexbox inputArea" id="passChkQuestion">
+                <div class="inputTitle">비밀번호 확인 질문</div>
+                <div>
+                    <select>
+                        <option value="0">기억에 남는 추억의 장소는?</option>
+                        <option value="1">자신의 인생 좌우명?</option>
+                        <option value="2">자신의 보물 제1호는?</option>
+                        <option value="3">가장 기억에 남는 선생님 성함은?</option>
+                        <option value="4">타인이 모르는 자신만의 신체비밀이 있다면?</option>
+                        <option value="5">추억하고 싶은 날짜가 있다면?</option>
+                        <option value="6">받았던 선물 중 기억에남는 독특한 선물은?</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flexbox inputArea" id="passChkAnswer">
+                <div class="inputTitle">비밀번호 확인 답변</div>
+                <div><input type="text"></div>
+            </div>
+            <div class="flexbox inputArea">
+                <div class="inputTitle">이름</div>
+                <div><input type="text"></div>
+            </div>
+            <div class="flexbox inputArea" id="address">
+                <div class="inputTitle">주소</div>
+                <div>
+                    <input type="text" id="postNum"> <button>우편번호</button>
+                    <br>
+                    <input type="text" id="addr1"> <label for="">기본주소</label>
+                    <br>
+                    <input type="text" id="addr2"> <label for="">나머지주소</label>
+                </div>
+            </div>
+            <div class="flexbox inputArea" id="contact1">
+                <div class="inputTitle">일반전화</div>
+                <div>
+                    <select name="" id="">
+                        <option value="02">02</option>
+                    </select>
+                     - <input type="text"> - <input type="text">
+                </div>
+            </div>
+            <div class="flexbox inputArea" id="contact2">
+                <div class="inputTitle">휴대전화</div>
+                <div>
+                    <select name="" id="">
+                        <option value="010">010</option>
+                    </select>
+                     - <input type="text"> - <input type="text">
+                </div>
+            </div>
+            <div class="flexbox inputArea last">
+                <div class="inputTitle">이메일</div>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <p id="extraInfo">추가정보</p>
+            <div class="flexbox inputArea" id="birthdate">
+                <div class="inputTitle">생년월일</div>
+                <div>
+                    <input type="text" id="year"><label for="">년</label>
+                    <input type="text" id="month"><label for="">월</label>
+                    <input type="text" id="day"><label for="">일</label>
+                    <input type="radio" id="solar" checked><label for="">양력</label>
+                    <input type="radio" id="lunar"><label for="">음력</label>
+                </div>
+            </div>
+            <div class="flexbox inputArea last">
+                <div class="inputTitle">지역</div>
+                <div>
+                    <select name="" id="location">
+                        <option value="none">선택</option>
+                        <option value="경기">경기</option>
+                        <option value="서울">서울</option>
+                        <option value="인천">인천</option>
+                        <option value="강원">강원</option>
+                        <option value="충남">충남</option>
+                        <option value="충북">충북</option>
+                        <option value="대전">대전</option>
+                        <option value="경북">경북</option>
+                        <option value="경남">경남</option>
+                        <option value="대구">대구</option>
+                        <option value="부산">부산</option>
+                        <option value="울산">울산</option>
+                        <option value="전북">전북</option>
+                        <option value="전남">전남</option>
+                        <option value="광주">광주</option>
+                        <option value="제주">제주</option>
+                    </select>
+                </div>
+            </div>
+            <p id="agreement">전체동의</p>
+            <div id="agreeBox">
+                <div id="allAgree">
+                    <input type="checkbox"> <span>이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</span>
+                </div> <!-- div#allAgree -->
+                <div id="mandatory1">
+                    <span>[필수] 이용약관 동의</span>
+                    <div class="agreement_content">
+                        
+                    </div>
+                    이용약관에 동의하십니까? <input type="checkbox"> 동의함
+                </div>
+                <div id="mandatory2">
+                    <span>[필수] 개인정보 수집 및 이용 동의</span>
+                    <div class="agreement_content">
+
+                    </div>
+                    개인정보 수집 및 이용에 동의하십니까? <input type="checkbox"> 동의함
+                </div>
+            </div> <!-- div#agreeBox -->
+        </main> <!-- main#main -->
+    </div> <!-- div#wrap -->
+    
+</body>
+</html>
